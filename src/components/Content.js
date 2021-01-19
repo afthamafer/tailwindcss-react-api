@@ -1,13 +1,10 @@
 import React from 'react';
 import TodoList from './TodoList';
-
+import Weather from './Weather';
 
 class Content extends React.Component {
 
     componentDidMount() {
-
-        const [query, setQuery] =  this.useState('');
-        const [weather, setWeather] = this.useState({});
       
         this.initWeatherApi()
         this.initClock()
@@ -16,28 +13,7 @@ class Content extends React.Component {
     }
 
 
-    initWeatherApi() {
-
-        const api = {
-            key: "085caf37b86251befe096a3966e0f79e",
-            base: "https://api.openweathermap.org/data/2.5/"
-        }
-
-        const [query, setQuery] =  this.useState('');
-        const [weather, setWeather] = this.useState({});
-      
-        const search = evt => {
-            if (evt.key === "Enter") {
-                fetch(`${api.base}weather?q=${query}&units=metric&APPID=${api.key}`)
-                    .then(res => res.json())
-                    .then(result => {
-                        setWeather(result);
-                        setQuery('');
-                        console.log(result);
-                    });
-            }
-        }
-
+    initWeatherApi() {      
 
     }
 
@@ -80,15 +56,17 @@ class Content extends React.Component {
                             <div className="grid grid-cols-2 grid-rows-3 gap-2 grid-flow-row-dense lg:grid-cols-2">
 
                                 <div className="p-4 pr-6 bg-yellow-600 border-1-8 border-transparent rounded-md">
-                                    <h2 className="text-lg font-semibold leading-6">Linkse scherm</h2>
-                                    <p className="text-gray-600" id="weather"> Weer API</p>
+                                 
+                                
+                                    <h2 className="text-3xl font-semibold leading-6 text-center">Check out the weather</h2>
+                                    <p className="text-gray-600" id="weather"> <Weather></Weather></p>
                                 </div>
 
                                 <div className="p-4 pr-6 bg-purple-400 border-1-8 text-center border-transparent rounded-md">
-                                    <h2 className="text-lg font-semibold leading-6">Rechtse scherm</h2>
-
+                                    <h2 className="text-3xl font-semibold leading-6 text-center">Date & Time</h2>
+        
                                     <p className="text-black-100 text-center" id="date"></p>
-                                    <p className="text-black-100 text-center font-sans md:text-5xl sm:text-lg" id="time">Tijd</p>
+                                    <p className="text-black-100 text-center font-sans md:text-5xl sm:text-xl" id="time">Tijd</p>
 
                                     <svg className=" mx-auto w-14 h-14 text-center object-none object-center text-gray-200 items-center" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
 

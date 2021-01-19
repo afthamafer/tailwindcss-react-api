@@ -42,10 +42,12 @@ class TodoList extends React.Component {
 
     render() {
         return <div>
-            <h2 className="text-lg text-purple-300 font-semibold leading-6">Takenlijst</h2>
+            <h2 className="text-3xl font-semibold leading-6 text-center">Takenlijst</h2>
+            <br></br><br></br>
             <ul>
                 {this.state.items.map((item) => <li key={item.toString()}>{item}</li>)}
             </ul>
+            <br></br><br></br>
         </div>;
     }
 }
