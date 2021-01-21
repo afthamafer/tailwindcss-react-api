@@ -21,14 +21,14 @@ With Tailwind CSS i made the layout of the website. Tailwind CSS is a utility-fi
 # Preview
 
 
-Open Weather API
+Open Weather API<br>
 ![](previewweather.JPG)
 <br>
 <br>
-Vanilla JS 
+Vanilla JS <br>
 ![](previewdatetime.JPG)
 <br>
 <br>
-Tailwind CSS
+Tailwind CSS<br>
 ![](previewdesktop.JPG)
 ![](previewmobile.JPG)
