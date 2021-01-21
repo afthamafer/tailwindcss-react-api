@@ -1,37 +1,46 @@
-# Getting Started with Create React App
+# Passion project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is built in [Create React App](https://reactjs.org/), [Tailwind CSS  ](https://tailwindcss.com/), , [Open Weather API ](https://openweathermap.org/current), And [Google Firebase](https://console.firebase.google.com/)
 
-## Available Scripts
+## About
 
-In the project directory, you can run:
+This project is inspired by this [Design](https://xd.adobe.com/view/988da839-dd61-4b95-9fa8-c0159b130b61-cdde/) and gave it my own twist to it.
 
-### `npm start`
+In this app you can Check out the weather , the time and date and the data received from the database.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Weather = Openweather API <br>
+Time and date = Vanilla Javascript <br>
+Read data (Takenlijst) = Google Firebase <br>
+ 
+This database is connected to this repository [Repository](https://github.com/afthamafer/Google-Firebase-CRUD-Data) and makes it possible to use the CRUD elements.
+All the changes will be applied to this project when that repository is used.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+With Tailwind CSS i made the layout of the website. Tailwind CSS is a utility-first CSS framework for rapidly building custom user interfaces. Its responsive and is easy to use for a beginner like me.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Tailwind-pracising
 
-### `npm run build`
+Trying to improve my skills in Tailwind CSS [Tailwind CSS](https://tailwindcss.com/)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# What is Tailwind
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Tailwind is a utility-first CSS framework. In contrast to other CSS frameworks like Bootstrap or Materialize CSS it doesn't come with predefined components. Instead Tailwind CSS operates on a lower level and provides you with a set of CSS helper classes.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# What do I need to use Tailwind
 
-### `npm run eject`
+- To use Tailwind you need [Node JS](https://nodejs.org/en/)
+- A code editor of choice. I recommend [Visual Studio Code](https://code.visualstudio.com/)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+# Installation
+ To install Tailwind CSS and to make sure you download the latest version check out the documentation [Documentation](https://tailwindcss.com/docs/installation)
+
+## About
+
+Trying out some basic Tailwind configuration and css
+
+
+![](Preview1Tailwind.JPG)
+![](Preview2Tailwind.JPG)
 
 If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
@@ -68,3 +77,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
